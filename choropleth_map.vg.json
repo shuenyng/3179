@@ -34,7 +34,6 @@
     },
     "config": {
       "view": {"stroke": null}
-    },
-    "titleConfig": {"fontSize": 14, "font": "Arial", "color": "black"}
+    }
   }
   
