@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "World Fertility Rate 2023",
+    "width": 800,
+    "height": 400,
+    "projection": {"type": "equalEarth"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+      "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+    },
+    "transform": [
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/shuenyng/3179/main/world-data-2023.csv"
+          },
+          "key": "Country",
+          "fields": ["Fertility Rate"]
+        }
+      }
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+      "color": {
+        "field": "Fertility Rate",
+        "type": "quantitative",
+        "scale": {"scheme": "viridis"}
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+        {"field": "Fertility Rate", "type": "quantitative", "format": ".2f", "title": "Fertility Rate"}
+      ]
+    },
+    "config": {
+      "view": {"stroke": null}
+    },
+    "titleConfig": {"fontSize": 14, "font": "Arial", "color": "black"}
+  }
+  
