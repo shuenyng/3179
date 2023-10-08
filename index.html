@@ -8,53 +8,45 @@
 
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
   
-  <!-- <script src = "graphs.js"> -->
-
-
-</script>
-
   <title> World Data 2023 </title>
+
+  <script src="graphs.js"></script> <!-- Include your JavaScript file here -->
 
 </head>
 
 <body>
   <div class="page">
-  <div class="pure-g">
-  <h1> First Graph </h1>
-  <div id = "uv_index_map"></div>
-  </div>
+    <div class="pure-g">
+      <h1> First Graph </h1>
+      <div id="uv_index_map"></div>
+    </div>
 
-  <div class="pure-g">
-  <h1> Second Graph </h1>
-  <div id = "co_region"></div>
-  </div>
+    <div class="pure-g">
+      <h1> Second Graph </h1>
+      <div id="co_region"></div>
+    </div>
 
-  <div class="pure-g">
-  <h1> Third Graph </h1>
-  <div id = "hum"></div>
-  </div>
-
+    <div class="pure-g">
+      <h1> Third Graph </h1>
+      <div id="humidity_region_country"></div>
+    </div>
   </div>
 
   <script type="text/javascript">
     var graph1 = "uv_index_map.json"; 
-  vegaEmbed('#uv_index_map', graph1).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+    vegaEmbed('#uv_index_map', graph1).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
-  var graph3 = "co_region.json"; 
-  vegaEmbed('#co_region', graph3).then(function(result) {
-    // Access the Vega view instance for co_region chart
-  }).catch(console.error);
+    var graph3 = "co_region.json"; 
+    vegaEmbed('#co_region', graph3).then(function(result) {
+      // Access the Vega view instance for co_region chart
+    }).catch(console.error);
 
-  var graph2 = "hum.vega.json"; // Specify the URL or file path for your humidity chart specification
-  vegaEmbed('#hum', graph2).then(function(result) {
-    // Access the Vega view instance for the humidity chart
-  }).catch(console.error);
+    var graph2 = "humidity_region_country.json"; // Specify the URL or file path for your humidity chart specification
+    vegaEmbed('#humidity_region_country', graph2).then(function(result) {
+      // Access the Vega view instance for the humidity chart
+    }).catch(console.error);
   </script>
-
-
 </body>
-
-
 </html>
