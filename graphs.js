@@ -9,6 +9,6 @@ var spec2 = "uv_index_map.json";
   }).catch(console.error);
 
   var spec4 = "co_region.json"; 
-  vegaEmbed('#co_regioin', spec4).then(function(result) {
+  vegaEmbed('#co_region', spec4).then(function(result) {
     // Access the Vega view instance for co_region chart
   }).catch(console.error);
