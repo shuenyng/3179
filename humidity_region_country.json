@@ -27,7 +27,7 @@
   ],
   "hconcat": [
     {
-      "width": 200,
+      "width": 450,
       "height": 300,
       "title": {"text": "Humidity by Continent"},
       "layer": [
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "width": 200,
+      "width": 450,
       "height": 300,
       "title": {"text": "Humidity by Country "},
       "layer": [
@@ -118,8 +118,8 @@
             }
           ],
           "transform": [
-            {"filter": {"param": "sel_Continent"}}, 
-            {"filter": {"param": "sel_Country"}},
+            {"filter": {"param": "sel_Continent"}}, // Filter based on selected Continent
+            {"filter": {"param": "sel_Country"}}, // Filter based on selected Country
             {
               "aggregate": [
                 {"op": "mean", "field": "humidity", "as": "Avg_Humidity"}
