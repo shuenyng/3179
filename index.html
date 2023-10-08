@@ -8,6 +8,7 @@
   
   <script src = "graphs.js">
 
+
 </script>
 
   <title> World Data 2023 </title>
@@ -19,10 +20,15 @@
   <div id = "uv_index_map"></div>
 
   <h1> Second Graph </h1>
-  <div id = "humidity_region_country"></div>
-
-  <h1> Third Graph </h1>
   <div id = "co_region"></div>
+
+  <script>
+    var spec3 = "humidity_region_country.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#humidity_region_country', spec3).then(function(result) {
+    // Access the Vega view instance for the humidity chart
+  }).catch(console.error);
+  
+  </script>
 </body>
 
 
