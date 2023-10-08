@@ -9,22 +9,13 @@
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
   
   <!-- <script src = "graphs.js"> -->
-
-
-</script>
-
-  <title> World Data 2023 </title>
+<script type="text/javascript">
+    
+  var graph2 = "humidity_region_country.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#humidity_region_country', graph2).then(function(result) {
+    // Access the Vega view instance for the humidity chart
+  }).catch(console.error);
+  </script>
 
 </head>
-
-  <div class="pure-g">
-  <h1> Third Graph </h1>
-  <div id = "humidity_region_country"></div>
-  </div>
-
-  </div>
-
-</body>
-
-
 </html>
