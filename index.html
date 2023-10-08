@@ -28,7 +28,8 @@
 
     <div class="pure-g">
       <h1> Third Graph </h1>
-      <div id="humidity_region_country"></div>
+      <div id="temp"></div>
+
     </div>
   </div>
 
@@ -43,8 +44,8 @@
       // Access the Vega view instance for co_region chart
     }).catch(console.error);
 
-    var graph2 = "humidity_region_country.json"; // Specify the URL or file path for your humidity chart specification
-    vegaEmbed('#humidity_region_country', graph2).then(function(result) {
+    var graph2 = "temp.json"; // Specify the URL or file path for your humidity chart specification
+    vegaEmbed('#temp', graph2).then(function(result) {
       // Access the Vega view instance for the humidity chart
     }).catch(console.error);
   </script>

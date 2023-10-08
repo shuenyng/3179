@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600, 
+  "height": 400,
+  "title": "Temperature vs. Humidity by Region",
+  "data": {
+    "url": "https://raw.githubusercontent.com/shuenyng/3179/main/GlobalWeatherRepository.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "selection": {
+    "region": {
+      "type": "single",
+      "fields": ["region"],
+      "bind": {
+        "input": "select",
+        "options": [
+          "Africa",
+          "America",
+          "Asia",
+          "Australia",
+          "Europe"
+        ],
+        "name": "Select Region"
+      }
+    }
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "humidity",
+      "type": "quantitative",
+      "title": "Humidity (%)"
+    },
+    "y": {
+      "field": "temperature_celsius",
+      "type": "quantitative",
+      "title": "Temperature"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {"scheme": "category10"}
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "region"
+      }
+    }
+  ]
+}
