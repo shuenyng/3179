@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {"text" : "UV Index of each country (2023)", "fontSize" : 18, "anchor" : "middle" },
+    "title": {"text" : "UV Index of each country (2022)", "fontSize" : 18, "anchor" : "middle" },
     "width": 1000,
     "height": 600,
     "data": {

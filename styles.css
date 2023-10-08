@@ -1,24 +1,26 @@
-/* Apply styles to the chart containers */
-.chart-container {
-	display: flex;
-	justify-content: space-between; /* Space the charts evenly */
-	padding: 20px; /* Add padding for spacing */
-  }
-  
-  /* Apply styles to individual charts */
-  .chart {
-	flex: 1; /* Allow charts to take equal space within the container */
-	margin: 10px; /* Add margin to separate the charts */
-  }
-  
-  /* Apply styles to specific chart IDs */
-  #uv_index_map {
-	/* Adjust positioning or size as needed */
-	margin: 0; /* Reset margin for this chart if necessary */
-  }
-  
-  #humidity_region_country {
-	/* Adjust positioning or size as needed */
-	margin: 0; /* Reset margin for this chart if necessary */
-  }
-  
+#uv_index_map {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#humidity_region_country {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#co_region {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}

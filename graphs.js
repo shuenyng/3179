@@ -7,3 +7,8 @@ var spec2 = "uv_index_map.json";
   vegaEmbed('#humidity_region_country', spec3).then(function(result) {
     // Access the Vega view instance for the humidity chart
   }).catch(console.error);
+
+  var spec4 = "co_region.json"; 
+  vegaEmbed('#co_regioin', spec2).then(function(result) {
+    // Access the Vega view instance for co_region chart
+  }).catch(console.error);

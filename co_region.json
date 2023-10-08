@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/shuenyng/3179/main/GlobalWeatherRepository.csv"
+  },
+  "title": "CO (Carbon Monoxide) by Region",
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Region",
+          "axis": {"labelAngle": 360}
+        },
+        "y": {
+          "field": "air_quality_Carbon_Monoxide",
+          "type": "quantitative",
+          "title": "CO (Carbon Monoxide)"
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "country", "title": "Country"},
+          {"field": "air_quality_Carbon_Monoxide", "title": "CO (Carbon Monoxide)"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "dy": -5,
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "region",
+          "type": "nominal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "air_quality_Carbon_Monoxide",
+          "type": "quantitative"
+        },
+        "text": {
+          "aggregate": "sum",
+          "field": "air_quality_Carbon_Monoxide",
+          "type": "quantitative",
+          "format": ".2f",
+          "title": "Total CO"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "width": 800,
+      "height": 400
+    },
+    "selection": {
+      "highlight": {
+        "type": "single",
+        "empty": "none",
+        "on": "mouseover"
+      }
+    }
+  }
+}
