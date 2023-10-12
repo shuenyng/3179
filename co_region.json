@@ -25,7 +25,8 @@
         "color": {
           "field": "region",
           "type": "nominal",
-          "legend": null
+          "legend": null,
+          "scale": {"range": ["#f5a201", "ffd358", "#cc0000", "#669966", "#003333"]}
         },
         "tooltip": [
           {"field": "country", "title": "Country"},
