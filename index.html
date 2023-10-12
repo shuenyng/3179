@@ -30,6 +30,10 @@
       <h1> Third Graph </h1>
       <div id="temp"></div>
 
+      <div class="pure-g">
+        <h1> Fourth Graph </h1>
+        <div id="humidity"></div>
+
     </div>
   </div>
 
@@ -46,6 +50,11 @@
 
     var graph2 = "temp.json"; // Specify the URL or file path for your humidity chart specification
     vegaEmbed('#temp', graph2).then(function(result) {
+      // Access the Vega view instance for the humidity chart
+    }).catch(console.error);
+
+    var graph3 = "humidity.vega.json"; // Specify the URL or file path for your humidity chart specification
+    vegaEmbed('#humidity', graph3).then(function(result) {
       // Access the Vega view instance for the humidity chart
     }).catch(console.error);
   </script>

@@ -12,3 +12,8 @@ var spec2 = "uv_index_map.json";
   vegaEmbed('#temp', spec3).then(function(result) {
     // Access the Vega view instance for the humidity chart
   }).catch(console.error);
+
+  var spec4 = "humidity.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#humidity', spec4).then(function(result) {
+    // Access the Vega view instance for the humidity chart
+  }).catch(console.error);

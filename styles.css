@@ -25,7 +25,14 @@
 	width: 800px;*/
 }
 
-
+#humidity{
+	top:300px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
 .pure-g
 {
 	margin-bottom: 40px;
