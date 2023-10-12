@@ -17,7 +17,7 @@
 }
 
 #temp{
-	top:300px;
+	top:100px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -26,7 +26,7 @@
 }
 
 #humidity{
-	top:300px;
+	top:100;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
