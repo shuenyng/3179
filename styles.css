@@ -9,7 +9,7 @@
 
 #co_region{
 	top:50px;
-	bottom: 100px; 
+	bottom: 50px; 
 	left: 100px;
 	right: 100px;
 	/*height: 1000px;
@@ -18,7 +18,7 @@
 
 #temp{
 	top:50px;
-	bottom: 200px; 
+	bottom: 300px; 
 	left: 100px;
 	right: 100px;
 	/*height: 1000px;
