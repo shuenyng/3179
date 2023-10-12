@@ -17,23 +17,19 @@
 <body>
   <div class="page">
     <div class="pure-g">
-      <h1> First Graph </h1>
+      <h1> UV Index Map </h1>
+      <p></p>
       <div id="uv_index_map"></div>
     </div>
 
     <div class="pure-g">
-      <h1> Second Graph </h1>
+      <h1> Carbon Monoxide Emissions by Region </h1>
       <div id="co_region"></div>
     </div>
-
+    
     <div class="pure-g">
-      <h1> Third Graph </h1>
-      <div id="temp"></div>
-
-      <div class="pure-g">
-        <h1> Fourth Graph </h1>
-        <div id="humidity"></div>
-
+      <h1> Humidity by Continent and Country </h1>
+      <div id="humidity"></div>
     </div>
   </div>
 
@@ -46,11 +42,6 @@
     var graph3 = "co_region.json"; 
     vegaEmbed('#co_region', graph3).then(function(result) {
       // Access the Vega view instance for co_region chart
-    }).catch(console.error);
-
-    var graph2 = "temp.json"; // Specify the URL or file path for your humidity chart specification
-    vegaEmbed('#temp', graph2).then(function(result) {
-      // Access the Vega view instance for the humidity chart
     }).catch(console.error);
 
     var graph3 = "humidity.vega.json"; // Specify the URL or file path for your humidity chart specification
