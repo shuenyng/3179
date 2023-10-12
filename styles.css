@@ -17,7 +17,8 @@
 }
 
 #humidity{
-	top:300;
+	padding-top:100px;
+	top:300px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
