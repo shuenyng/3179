@@ -12,7 +12,9 @@
       {"field": "humidity", "valid": true}
     ]
   },
-  
+  "mark": {
+    "type": "rect" 
+  },
   "width": 300,
   "height": 200,
   "encoding": {
