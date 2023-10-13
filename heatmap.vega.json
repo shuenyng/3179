@@ -12,13 +12,7 @@
       {"field": "humidity", "valid": true}
     ]
   },
-  "mark": {
-    "type": "rect",
-    "tooltip": {
-      "title": "Weather Data",
-      "content": "Temperature: {temperature_celsius}°C\nHumidity: {humidity}%"
-    }
-  },
+  
   "width": 300,
   "height": 200,
   "encoding": {
