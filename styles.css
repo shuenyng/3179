@@ -1,5 +1,5 @@
 #air_quality_map{
-	top:10px;
+	top:20px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -8,7 +8,7 @@
 }
 
 #uv_index_map{
-	top:50px;
+	top:20px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
