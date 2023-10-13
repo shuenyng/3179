@@ -59,7 +59,7 @@
             ],
             "mark": {
               "type": "bar",
-              "fill": "#ffd358",
+              "fill": "#f3d23fbe",
               "stroke": "black",
               "cursor": "pointer"
             },
@@ -134,7 +134,7 @@
             ],
             "mark": {
               "type": "bar",
-              "fill": "#f5a201",
+              "fill": "#f78c35d0",
               "stroke": "black",
               "cursor": "pointer"
             },

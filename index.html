@@ -16,6 +16,13 @@
 
 <body>
   <div class="page">
+
+    <div class="pure-g">
+      <h1> Air Quality Index Map </h1>
+      <p></p>
+      <div id="air_quality_map"></div>
+    </div>
+
     <div class="pure-g">
       <h1> UV Index Map </h1>
       <p></p>
@@ -35,7 +42,25 @@
     </div>
   </div>
 
+  <div class="pure-g">
+    <h1> Carbon Monoxide Emission and Temperature</h1>
+    <div id="co_temp"></div>
+  </div>
+</div>
+
+<div class="pure-g">
+  <h1> Heatmap of Temperature and Humidity</h1>
+  <div id="heatmap"></div>
+</div>
+</div>
+
   <script type="text/javascript">
+
+    var graph = "air_quality_map.json"; 
+    vegaEmbed('#air_quality_map', graph).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
     var graph1 = "uv_index_map.json"; 
     vegaEmbed('#uv_index_map', graph1).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -50,6 +75,18 @@
     vegaEmbed('#humidity', graph3).then(function(result) {
       // Access the Vega view instance for the humidity chart
     }).catch(console.error);
+
+    var graph4 = "co_temp.vega.json"; // Specify the URL or file path for your humidity chart specification
+    vegaEmbed('#co_temp', graph4).then(function(result) {
+      // Access the Vega view instance for the humidity chart
+    }).catch(console.error);
+
+    var graph5 = "heatmap.vega.json"; // Specify the URL or file path for your humidity chart specification
+    vegaEmbed('#heatmap', graph5).then(function(result) {
+      // Access the Vega view instance for the humidity chart
+    }).catch(console.error);
+
+    
   </script>
 </body>
 </html>

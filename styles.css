@@ -1,3 +1,12 @@
+#air_quality_map{
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
 #uv_index_map{
 	top:10px;
 	bottom: 100px; 
@@ -9,6 +18,15 @@
 
 #co_region{
 	top:50px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#temp{
+	top:300px;
 	bottom: 300px; 
 	left: 100px;
 	right: 100px;
@@ -17,6 +35,24 @@
 }
 
 #humidity{
+	top:300px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#co_temp{
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#heatmap{
 	top:100px;
 	bottom: 100px; 
 	left: 100px;
@@ -27,5 +63,4 @@
 .pure-g
 {
 	margin-bottom: 40px;
-	margin-top: 40px;
 }

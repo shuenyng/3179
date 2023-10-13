@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {"text" : "UV Index of each country (2022)", "fontSize" : 18, "anchor" : "middle" },
+    "title": {"text" : "Air Quality Index of each country (2023)", "fontSize" : 18, "anchor" : "middle" },
     "width": 1000,
     "height": 600,
     "data": {
@@ -42,24 +42,24 @@
                 "url": "https://raw.githubusercontent.com/shuenyng/3179/main/GlobalWeatherRepository.csv"
               },
               "key": "country",
-              "fields": ["uv_index"]
+              "fields": ["air_quality_us-epa-index"]
             }
           }
         ],
         "mark": {"type": "geoshape", "stroke": "white"},
         "encoding": {
           "color": {
-            "field": "uv_index",
+            "field": "air_quality_us-epa-index",
             "type": "quantitative",
             "scale": {
               "type": "threshold",
-              "domain": [0,2,4,6,8,10],
-              "range": ["white", "#fac525", "#fca205", "#fc8505","#fc6c05", "#fc5305", "#fc2a05"]
+              "domain": [1,2,3,4,5],
+              "range": ["white", "#fac928", "#fca205", "#fc8505","#fc6c05", "#fc2a05"]
             }
           },
           "tooltip": [
             {"field": "properties.NAME", "type": "nominal", "title": "country"},
-            {"field": "uv_index", "type": "quantitative", "title": "uv_index"}
+            {"field": "air_quality_us-epa-index", "type": "quantitative", "title": "air_quality_us-epa-index"}
           ]
         }
       },

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/shuenyng/3179/main/GlobalWeatherRepository.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "filter": {
+    "and": [
+      {"field": "temperature_celsius", "valid": true},
+      {"field": "humidity", "valid": true}
+    ]
+  },
+  "mark": {
+    "type": "rect",
+    "tooltip": {
+      "title": "Weather Data",
+      "content": "Temperature: {temperature_celsius}°C\nHumidity: {humidity}%"
+    }
+  },
+  "width": 300,
+  "height": 200,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 60},
+      "field": "temperature_celsius",
+      "type": "quantitative",
+      "title": "Temperature"
+    },
+    "y": {
+      "bin": {"maxbins": 40},
+      "field": "humidity",
+      "type": "quantitative",
+      "title": "Humidity"
+    },
+    "color": {
+      "aggregate": "mean",
+      "field": "humidity",
+      "type": "quantitative",
+      "scale": {
+        "range": ["yellow", "orange", "red"]
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "title": "Temperature vs. Humidity",
+  "selection": {
+    "temperature": {"type": "single", "encodings": ["x"]}
+  }
+}
