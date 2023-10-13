@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/shuenyng/3179/main/GlobalWeatherRepository.csv"},
   "mark": "circle",
-  "width": 450,
-  "height": 300,
+  "width": 300,
+  "height": 200,
   "title": "Relationship between Carbon Monoxide Emission and Temperature",
   "encoding": {
     "facet": {
