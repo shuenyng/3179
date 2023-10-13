@@ -8,7 +8,7 @@
 }
 
 #uv_index_map{
-	top:100px;
+	top:50px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -17,7 +17,7 @@
 }
 
 #co_region{
-	top:50px;
+	top:100px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -35,7 +35,7 @@
 }
 
 #co_temp{
-	top:150px;
+	top:300px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -44,7 +44,7 @@
 }
 
 #heatmap{
-	top:150px;
+	top:250px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
