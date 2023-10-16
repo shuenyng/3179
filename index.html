@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
   
-  <title> World Data 2023 </title>
+  <title>World Data 2023</title>
 
   <script src="graphs.js"></script> <!-- Include your JavaScript file here -->
 
@@ -16,84 +16,88 @@
 
 <body>
   <div class="page">
-
-    <div class="pure-g">
-      <h1> Air Quality Index Map </h1>
-      <p></p>
-      <div id="air_quality_map"></div>
-    </div>
-
-    <div class="pure-g">
-      <h1> UV Index Map </h1>
-      <p></p>
-      <div id="uv_index_map"></div>
-    </div>
-
-
-    <br>
-
-    <div class="pure-g">
-      <h1> Carbon Monoxide Emissions by Region </h1>
-      <div id="co_region"></div>
-    </div>
-
-    <br>
+    <h1 class="title">World Data Visualization 2023</h1>
     
-    <div class="pure-g">
-      <h1> Humidity by Continent and Country </h1>
-      <div id="humidity"></div>
+    <!-- Life Expectancy Chart -->
+    <div class="chart-container">
+      <h2>Life Expectancy</h2>
+      <p>Explore life expectancy data worldwide.</p>
+      <div id="life_expectancy"></div>
+    </div>
+
+    <!-- Infant Mortality Chart -->
+    <div class="chart-container">
+      <h2>Infant Mortality</h2>
+      <p>Visualize infant mortality rates across countries.</p>
+      <div id="infant_mortality"></div>
+    </div>
+
+    <!-- Fertility Rate Chart -->
+    <div class="chart-container">
+      <h2>Fertility Rate</h2>
+      <p>Understand fertility rates and their variations.</p>
+      <div id="fertility_rate"></div>
+    </div>
+
+    <!-- Unemployment Rate Chart -->
+    <div class="chart-container">
+      <h2>Unemployment Rate</h2>
+      <p>Analyze global unemployment statistics.</p>
+      <div id="unemployment_rate"></div>
+    </div>
+
+    <!-- Maternal Mortality Chart -->
+    <div class="chart-container">
+      <h2>Maternal Mortality</h2>
+      <p>Visualize maternal mortality rates by region.</p>
+      <div id="maternal_mortality"></div>
+    </div>
+
+    <!-- Minimum Wage Chart -->
+    <div class="chart-container">
+      <h2>Minimum Wage</h2>
+      <p>Explore minimum wage data and variations.</p>
+      <div id="minimum_wage"></div>
+    </div>
+
+    <!-- Gasoline Prices Chart -->
+    <div class="chart-container">
+      <h2>Gasoline Prices</h2>
+      <p>Compare gasoline prices in different regions.</p>
+      <div id="gasoline_prices"></div>
+    </div>
+
+    <!-- Population Chart -->
+    <div class="chart-container">
+      <h2>Population</h2>
+      <p>Analyze population trends and growth rates.</p>
+      <div id="population"></div>
+    </div>
+
+    <!-- Agricultural vs Forested Land Chart -->
+    <div class="chart-container">
+      <h2>Agricultural vs Forested Land</h2>
+      <p>See the distribution of land use in various countries.</p>
+      <div id="stacked"></div>
+    </div>
+
+    <!-- Birth Rate vs Fertility Rate Chart -->
+    <div class="chart-container">
+      <h2>Birth Rate vs Fertility Rate</h2>
+      <p>Compare birth rates and fertility rates globally.</p>
+      <div id="birth_fertility"></div>
+    </div>
+
+    <!-- Infant Mortality vs Life Expectancy Chart -->
+    <div class="chart-container">
+      <h2>Infant Mortality vs Life Expectancy</h2>
+      <p>Explore the relationship between infant mortality and life expectancy.</p>
+      <div id="infant_life"></div>
     </div>
   </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-  <div class="pure-g">
-    <h1> Carbon Monoxide Emission and Temperature</h1>
-    <div id="co_temp"></div>
-  </div>
-</div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
   <script type="text/javascript">
-
-    var graph = "air_quality_map.json"; 
-    vegaEmbed('#air_quality_map', graph).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    var graph1 = "uv_index_map.json"; 
-    vegaEmbed('#uv_index_map', graph1).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    var graph2 = "co_region.json"; 
-    vegaEmbed('#co_region', graph2).then(function(result) {
-      // Access the Vega view instance for co_region chart
-    }).catch(console.error);
-
-    var graph3 = "humidity.vega.json"; // Specify the URL or file path for your humidity chart specification
-    vegaEmbed('#humidity', graph3).then(function(result) {
-      // Access the Vega view instance for the humidity chart
-    }).catch(console.error);
-
-    var graph4 = "co_temp.vega.json"; // Specify the URL or file path for your humidity chart specification
-    vegaEmbed('#co_temp', graph4).then(function(result) {
-      // Access the Vega view instance for the humidity chart
-    }).catch(console.error);
-    
+    // Your Vega chart embedding code here
   </script>
 </body>
 </html>
