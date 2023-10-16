@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"
+  },
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "Maternal mortality ratio",
+      "type": "quantitative",
+      "title": "Maternal mortality Rate"
+    },
+    "x": {
+      "field": "Physicians per thousand",
+      "type": "quantitative",
+      "title": "Physicians per thousand"
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "title": "Continent"
+    },
+    "size": {
+      "field": "Health Expenditure",
+      "type": "quantitative",
+      "title": "Health Expenditure"
+    },
+    "tooltip": [ 
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "Health Expenditure", "type": "quantitative", "title": "Health Expenditure"}
+    ]
+  },
+  "selection": {
+    "Continent_Filter": {  
+      "type": "single",
+      "fields": ["Continent"],
+      "bind": {
+        "input": "select",
+        "options": [null, "Africa", "Asia", "Europe", "North America", "Oceania", "South America"]
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "Continent_Filter"
+      }
+    }
+  ],
+  "title": "Maternal Mortality Rate",
+  "width": 600,
+  "height": 400
+}
