@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"},
+  "transform": [{
+    "filter": {"and": [
+      {"field": "Birth Rate", "valid": true},
+      {"field": "Fertility Rate", "valid": true}
+    ]}
+  }],
+  "mark": "rect",
+  "width": 300,
+  "height": 200,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins":20},
+      "field": "Birth Rate",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": {"maxbins": 20},
+      "field": "Fertility Rate",
+      "type": "quantitative"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "title": "Birth rate vs Fertility rate Heatmap",
+  "width": 300,
+  "height": 300
+}
+
