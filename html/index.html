@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+  
+  <title> World Data 2023 </title>
+
+  <script src="graphs.js"></script> <!-- Include your JavaScript file here -->
+
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="pure-g">
+      <h1> Life Expectancy </h1>
+      <p></p>
+      <div id="life_expectancy"></div>
+    </div>
+
+    <div class="pure-g">
+      <h1> Infant Mortality </h1>
+      <p></p>
+      <div id="infant_mortality"></div>
+    </div>
+
+    <div class="pure-g">
+      <h1> Fertility Rate </h1>
+      <div id="fertility_rate"></div>
+    </div>
+
+    <br>
+    
+    <div class="pure-g">
+      <h1> Unemployment Rate </h1>
+      <div id="unemployment_rate"></div>
+    </div>
+  </div>
+
+    <div class="pure-g">
+      <h1> Maternal Mortality </h1>
+      <div id="maternal_mortality"></div>
+    </div>
+  </div>
+
+    <div class="pure-g">
+      <h1> Minimum Wage </h1>
+      <div id="minimum_wage"></div>
+    </div>
+
+    <div class="pure-g">
+      <h1> Gasoline Prices </h1>
+      <div id="gasoline_prices"></div>
+    </div>
+
+    <div class="pure-g">
+      <h1> Population </h1>
+      <div id="population"></div>
+  </div>
+
+    <div class="pure-g">
+      <h1>  Agricultural vs Forested Land </h1>
+      <div id="stacked"></div>
+  </div>
+
+    <div class="pure-g">
+      <h1> Birth rate against Feritlity rate </h1>
+      <div id="birth_fertility"></div>
+  </div>
+
+    <div class="pure-g">
+      <h1> Infant Mortality against Life Expectancy </h1>
+      <div id="infant_life"></div>
+  </div>
+</div>
+
+  <script type="text/javascript">
+
+var spec = "life_expectancy.vega.json"; 
+  vegaEmbed('#life_expectancy', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+var graph1 = "infant_mortality.vega.json"; 
+  vegaEmbed('#infant_mortality', graph1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var graph2 = "fertility_rate.vega.json"; 
+  vegaEmbed('#fertility_rate', graph2).then(function(result) {
+    // Access the Vega view instance for co_region chart
+  }).catch(console.error);
+
+  var graph3 = "unemployment_rate.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#unemployment_rate', graph3).then(function(result) {
+    // Access the Vega view instance for the humidity chart
+  }).catch(console.error);
+
+  var graph4 = "maternal_mortality.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#maternal_mortality', graph4).then(function(result) {
+    // Access the Vega view instance for the co_temp chart
+  }).catch(console.error);
+
+  var graph5 = "minimum_wage.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#minimum_wage', graph5).then(function(result) {
+    // Access the Vega view instance for the heatmap chart
+  }).catch(console.error);
+
+  var graph6 = "gasoline_prices.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#gasoline_prices', graph6).then(function(result) {
+    // Access the Vega view instance for the heatmap chart
+  }).catch(console.error);
+
+  var graph7 = "population.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#population', graph7).then(function(result) {
+    // Access the Vega view instance for the heatmap chart
+  }).catch(console.error);
+
+  var graph8 = "stacked.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#stacked', graph8).then(function(result) {
+    // Access the Vega view instance for the heatmap chart
+  }).catch(console.error);
+
+  var graph9 = "birth_fertility.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#birth_fertility', graph9).then(function(result) {
+    // Access the Vega view instance for the heatmap chart
+  }).catch(console.error);
+
+  var graph10 = "infant_life.vega.json"; // Specify the URL or file path for your humidity chart specification
+  vegaEmbed('#infant_life', graph10).then(function(result) {
+    // Access the Vega view instance for the heatmap chart
+  }).catch(console.error);
+
+
+  
+
+    
+  </script>
+</body>
+</html>
