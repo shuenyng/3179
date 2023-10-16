@@ -1,5 +1,50 @@
-#air_quality_map{
-	top:20px;
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .page {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+  }
+  
+  .title {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  .chart-container {
+	background-color: #fff;
+	margin: 20px 0;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+	font-size: 24px;
+	margin: 0;
+  }
+  
+  p {
+	margin: 10px 0;
+  }
+  
+  /* Add your chart styling here */
+  
+  /* You may not need the positioning styles (#life_expectancy, #infant_mortality, etc.) anymore */
+
+  
+  
+#life_expectancy{
+	top:10px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -7,16 +52,7 @@
 	width: 800px;*/
 }
 
-#uv_index_map{
-	top:20px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#co_region{
+#infant_mortality{
 	top:100px;
 	bottom: 100px; 
 	left: 100px;
@@ -25,7 +61,16 @@
 	width: 800px;*/
 }
 
-#humidity{
+#fertility_rate{
+	top:50px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#unemployment_rate{
 	top:150px;
 	bottom: 100px; 
 	left: 100px;
@@ -34,8 +79,8 @@
 	width: 800px;*/
 }
 
-#co_temp{
-	top:100px;
+#maternal_mortality{
+	top:150px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -43,8 +88,53 @@
 	width: 800px;*/
 }
 
-#heatmap{
-	top:50px;
+#minimum_wage{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#gasoline_prices{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#population{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#stacked{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#birth_fertility{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#infant_life{
+	top:150px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
