@@ -18,7 +18,7 @@
     <!-- Add a navigation bar here -->
     <nav>
       <ul>
-        <li><a href="#world-data-section">World Data</a></li>
+        <li><a href="#world-data-section">Life Expectancy Map</a></li>
         <li><a href="#maternal-mortality-section">Maternal Mortality</a></li>
         <li><a href="#birth-fertility-section">Birth Rate vs Fertility Rate</a></li>
         <li><a href="#unemployment-section">Unemployment Rate</a></li>
@@ -26,66 +26,67 @@
       </ul>
     </nav>
   </header>
+  
   <div class="page" style="background-color: #edf2e9;">
     <h1 class="title">World Data 2023</h1>
 
-    <!-- Chart Switching Container -->
-    <div class="chart-container">
+    <section id="world-data-section" class="chart-container">
+      <!-- Chart Switching Container -->
       <p>Explore different data visualizations by clicking the buttons below:</p>
       <p>Imagine a population where life expectancy is high, birth rate is low, and fertility rate is below replacement. 
-         The lack of resources to support the population could lead to an increase in poverty.</p>
+        The lack of resources to support the population could lead to an increase in poverty.</p>
       <div id="chart-container" style="text-align: center;">
         <div id="life_expectancy" style="display: block;"></div>
         <div id="infant_mortality" style="display: none;"></div>
         <div id="fertility_rate" style="display: none;"></div>
-        <p>We can use the data above to understand the current state of a population and to predict its future growth. Hover around the maps to predict how the population of your country will change in the next 50 years! </p>
+        <p>We can use the data above to understand the current state of a population and to predict its future growth. Hover around the maps to predict how the population of your country will change in the next 50 years!</p>
       </div>
       <div id="chart-buttons">
         <button onclick="showChart('life_expectancy')">Life Expectancy</button>
         <button onclick="showChart('infant_mortality')">Infant Mortality</button>
         <button onclick="showChart('fertility_rate')">Fertility Rate</button>
       </div>
-    </div>
-
-    <!-- Maternal Mortality Chart -->
-    <div class="chart-container" style="text-align: center;">
+    </section>
+    
+    <section id="maternal-mortality-section" class="chart-container">
+      <!-- Maternal Mortality Chart -->
       <h2>Maternal Mortality</h2>
       <p>This chart highlights the challenges faced by expectant mothers in different parts of the world. At first glance, countries in Africa have the most number of maternal mortalities and least number of physicians. 
-         On the contrary, Europe has the least amount of maternal mortalities along with a great number of physicians available.</p>
+        On the contrary, Europe has the least amount of maternal mortalities along with a great number of physicians available.</p>
       <div id="maternal_mortality"></div>
-      <p>Feel free to use the drop down menu above to filer your continent of interest!</p>
-    </div>
+      <p>Feel free to use the drop-down menu above to filter your continent of interest!</p>
+    </section>
+    
+    <section id="birth-fertility-section" class="chart-container">
+      <!-- Birth Rate vs Fertility Rate Chart and Infant Mortality vs Life Expectancy Chart (side by side) -->
+      <div style="flex: 1;">
+        <h2>Birth Rate vs Fertility Rate</h2>
+        <p>This chart helps you understand the relationship between the number of births and fertility rates.</p>
+        <div id="birth_fertility"></div>
+        <p>There is a positive correlation between the number of births and fertility rates. The higher the fertility rate, the higher the number of births.</p>
+      </div>
+      <div style="flex: 1;">
+        <h2>Infant Mortality vs Life Expectancy</h2>
+        <p>Explore the relationship between infant mortality and life expectancy.</p>
+        <div id="infant_life"></div>
+        <p>Conversely, there is a negative correlation between the number of infant mortality and life expectancy. The higher the life expectancy, the lower the infant mortality.</p>
+      </div>
+    </section>
 
-    <!-- Birth Rate vs Fertility Rate Chart and Infant Mortality vs Life Expectancy Chart (side by side) -->
-<div class="chart-container" style="display: flex; justify-content: center; text-align: center;">
-  <div style="flex: 1;">
-    <h2>Birth Rate vs Fertility Rate</h2>
-    <p>This chart helps you understand the relationship between number of birth and fertility rates.</p>
-    <div id="birth_fertility"></div>
-    <p>There is a positive correlation between the number of births and fertility rates. The higher the fertility rate, the higher the number of births.</p>
-  </div>
-  <div style="flex: 1;">
-    <h2>Infant Mortality vs Life Expectancy</h2>
-    <p>Explore the relationship between infant mortality and life expectancy.</p>
-    <div id="infant_life"></div>
-    <p>Conversely, there is a negative correlation between the number of infant mortality and life expectancy. The higher the life expectancy, the lower the infant mortality.</p>
-  </div>
-</div>
-
-    <!-- Unemployment Rate Chart -->
-    <div class="chart-container" style="text-align: center;">
+    <section id="unemployment-section" class="chart-container">
+      <!-- Unemployment Rate Chart -->
       <h2>Unemployment Rate</h2>
       <p>Look at the global unemployment statistics! This chart provides insights into employment trends and economic conditions worldwide.</p>
       <div id="unemployment_rate"></div>
-      <p>Use the drop down menu here to filter out the top ranked countries of unemployment.</p>
-    </div>
+      <p>Use the drop-down menu here to filter out the top-ranked countries of unemployment.</p>
+    </section>
 
-    <!-- Agricultural vs Forested Land Chart -->
-    <div class="chart-container" style="text-align: center;">
+    <section id="land-usage-section" class="chart-container">
+      <!-- Agricultural vs Forested Land Chart -->
       <h2>Agricultural vs Forested Land</h2>
-      <p>Visualise the distribution of land use in various continents. This chart showcases how land is utilized for agriculture and forests in different regions.</p>
+      <p>Visualize the distribution of land use in various continents. This chart showcases how land is utilized for agriculture and forests in different regions.</p>
       <div id="stacked"></div>
-    </div>
+    </section>
   </div>
 
   <script type="text/javascript">
@@ -96,7 +97,7 @@
       document.getElementById(chartId).style.display = 'block';
       currentChart = chartId;
     }
-
+    
     var spec1 = "js/life_expectancy.vega.json";
     vegaEmbed('#life_expectancy', spec1).catch(console.error);
 
@@ -120,6 +121,7 @@
 
     var graph7 = "js/stacked.vega.json";
     vegaEmbed('#stacked', graph7).catch(console.error);
+    
   </script>
 </body>
 </html>
