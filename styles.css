@@ -53,7 +53,7 @@ body {
 }
 
 #infant_mortality{
-	top:100px;
+	top: 10px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -62,7 +62,7 @@ body {
 }
 
 #fertility_rate{
-	top:50px;
+	top:10px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -71,7 +71,7 @@ body {
 }
 
 #maternal_mortality{
-	top:150px;
+	top:20px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -80,7 +80,7 @@ body {
 }
 
 #birth_fertility{
-	top:150px;
+	top:10px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -89,7 +89,7 @@ body {
 }
 
 #infant_life{
-	top:150px;
+	top:10px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -98,7 +98,7 @@ body {
 }
 
 #unemployment_rate{
-	top:150px;
+	top:20px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -107,7 +107,7 @@ body {
 }
 
 #stacked{
-	top:150px;
+	top:10px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
