@@ -6,11 +6,11 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
-  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
   
   <title>World Data 2023</title>
 
-  <script src="graphs.js"></script> <!-- Include your JavaScript file here -->
+  <script src="js/graphs.js"></script> <!-- Include your JavaScript file here -->
 </head>
 
 <body>
@@ -42,7 +42,7 @@
       <p>This chart highlights the challenges faced by expectant mothers in different parts of the world. At first glance, countries in Africa have the most number of maternal mortalities and least number of physicians. 
          On the contrary, Europe has the least amount of maternal mortalities along with a great number of physicians available.</p>
       <div id="maternal_mortality"></div>
-      <p>Feel free to use the drop down menu below to filer your continent of interest!</p>
+      <p>Feel free to use the drop down menu above to filer your continent of interest!</p>
     </div>
 
     <!-- Birth Rate vs Fertility Rate Chart and Infant Mortality vs Life Expectancy Chart (side by side) -->
@@ -86,27 +86,27 @@
       currentChart = chartId;
     }
 
-    var spec1 = "life_expectancy.vega.json";
+    var spec1 = "js/life_expectancy.vega.json";
     vegaEmbed('#life_expectancy', spec1).catch(console.error);
 
-    var spec2 = "infant_mortality.vega.json";
+    var spec2 = "js/infant_mortality.vega.json";
     vegaEmbed('#infant_mortality', spec2).catch(console.error);
 
-    var spec3 = "fertility_rate.vega.json";
+    var spec3 = "js/fertility_rate.vega.json";
     vegaEmbed('#fertility_rate', spec3).catch(console.error);
     var graph3 = "maternal_mortality.vega.json";
     vegaEmbed('#maternal_mortality', graph3).catch(console.error);
 
-    var graph4 = "birth_fertility.vega.json";
+    var graph4 = "js/birth_fertility.vega.json";
     vegaEmbed('#birth_fertility', graph4).catch(console.error);
 
-    var graph5 = "infant_life.vega.json";
+    var graph5 = "js/infant_life.vega.json";
     vegaEmbed('#infant_life', graph5).catch(console.error);
 
-    var graph6 = "unemployment_rate.vega.json";
+    var graph6 = "js/unemployment_rate.vega.json";
     vegaEmbed('#unemployment_rate', graph6).catch(console.error);
 
-    var graph7 = "stacked.vega.json";
+    var graph7 = "js/stacked.vega.json";
     vegaEmbed('#stacked', graph7).catch(console.error);
   </script>
 </body>
