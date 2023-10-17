@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"
   },
-  "background":"#e1e6dd",
+  "background": "#e1e6ddx",
   "params": [
     {
       "name": "Top_k_Continent",
@@ -116,6 +116,9 @@
           ],
           "transform": [
             {"filter": {"param": "sel_Country"}},
+            {
+              "filter": {"param": "sel_Continent"}
+            },
             {
               "aggregate": [
                 {"op": "mean", "field": "Unemployment rate", "as": "Avg_unemployment"}
