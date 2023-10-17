@@ -70,52 +70,7 @@ body {
 	width: 800px;*/
 }
 
-#unemployment_rate{
-	top:150px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
 #maternal_mortality{
-	top:150px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#minimum_wage{
-	top:150px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#gasoline_prices{
-	top:150px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#population{
-	top:150px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#stacked{
 	top:150px;
 	bottom: 100px; 
 	left: 100px;
@@ -141,6 +96,25 @@ body {
 	/*height: 1000px;
 	width: 800px;*/
 }
+
+#unemployment_rate{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#stacked{
+	top:150px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
 .pure-g
 {
 	margin-top: 40px;
