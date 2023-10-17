@@ -6,7 +6,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
-  <link rel="stylesheet" type="text css" href="styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
   
   <title>World Data 2023</title>
 
@@ -14,14 +14,14 @@
 </head>
 
 <body>
-  <div class="page">
+  <div class="page" style="background-color: #E5E4E2;">
     <h1 class="title">World Data Visualization 2023</h1>
 
     <!-- Chart Switching Container -->
     <div class="chart-container">
       <h2>World Data</h2>
       <p>Explore different data visualizations by clicking the buttons below:</p>
-      <div id="chart-container">
+      <div id="chart-container" style="text-align: center;">
         <div id="life_expectancy" style="display: block;"></div>
         <div id="infant_mortality" style="display: none;"></div>
         <div id="fertility_rate" style="display: none;"></div>
@@ -34,35 +34,35 @@
     </div>
 
     <!-- Maternal Mortality Chart -->
-    <div class="chart-container">
+    <div class="chart-container" style="text-align: center;">
       <h2>Maternal Mortality</h2>
       <p>Visualize maternal mortality rates by region. This chart highlights the challenges faced by expectant mothers in different parts of the world.</p>
       <div id="maternal_mortality"></div>
     </div>
 
-    <!-- Birth Rate vs Fertility Rate Chart -->
-    <div class="chart-container">
-      <h2>Birth Rate vs Fertility Rate</h2>
-      <p>Compare birth rates and fertility rates globally. This chart helps you understand the relationship between birth rates and fertility across nations.</p>
-      <div id="birth_fertility"></div>
-    </div>
-
-    <!-- Infant Mortality vs Life Expectancy Chart -->
-    <div class="chart-container">
-      <h2>Infant Mortality vs Life Expectancy</h2>
-      <p>Explore the relationship between infant mortality and life expectancy. This chart reveals how these two critical factors are intertwined in different countries.</p>
-      <div id="infant_life"></div>
+    <!-- Birth Rate vs Fertility Rate Chart and Infant Mortality vs Life Expectancy Chart (side by side) -->
+    <div class="chart-container" style="display: flex; justify-content: center; text-align: center;">
+      <div style="flex: 1;">
+        <h2>Birth Rate vs Fertility Rate</h2>
+        <p>Compare birth rates and fertility rates globally. This chart helps you understand the relationship between birth rates and fertility across nations.</p>
+        <div id="birth_fertility"></div>
+      </div>
+      <div style="flex: 1;">
+        <h2>Infant Mortality vs Life Expectancy</h2>
+        <p>Explore the relationship between infant mortality and life expectancy. This chart reveals how these two critical factors are intertwined in different countries.</p>
+        <div id="infant_life"></div>
+      </div>
     </div>
 
     <!-- Unemployment Rate Chart -->
-    <div class="chart-container">
+    <div class="chart-container" style="text-align: center;">
       <h2>Unemployment Rate</h2>
       <p>Analyze global unemployment statistics. This chart provides insights into employment trends and economic conditions worldwide.</p>
       <div id="unemployment_rate"></div>
     </div>
 
     <!-- Agricultural vs Forested Land Chart -->
-    <div class="chart-container">
+    <div class="chart-container" style="text-align: center;">
       <h2>Agricultural vs Forested Land</h2>
       <p>See the distribution of land use in various countries. This chart showcases how land is utilized for agriculture and forests in different regions.</p>
       <div id="stacked"></div>
