@@ -3,6 +3,7 @@
     "title": {"text" : "Life Expectancy of each Country", "fontSize" : 18, "anchor" : "middle" },
     "width": 700,
     "height": 450,
+    "background":"#d7d7d7",
     "data": {
       "url": "https://raw.githubusercontent.com/shuenyng/3179/main/ne_110m_admin_0_countries.json",
       "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}

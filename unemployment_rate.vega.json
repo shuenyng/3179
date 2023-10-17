@@ -27,9 +27,10 @@
   ],
   "hconcat": [
     {
-      "width": 400,
+      "width": 450,
       "height": 300,
       "title": {"text": "Unemployment rate by Continent"},
+      "background":"#d7d7d7",
       "layer": [
         {
           "params": [
@@ -98,9 +99,10 @@
       ]
     },
     {
-      "width": 400,
+      "width": 450,
       "height": 300,
       "title": {"text": "Unemployment by Country"},
+      "background":"#d7d7d7",
       "layer": [
         {
           "params": [

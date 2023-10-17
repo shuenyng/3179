@@ -16,6 +16,8 @@
     },
     "title": "Agricultural and Forested Land Distrbibution",
     "width": 400,
-    "height": 300
+    "height": 300,
+    "background":"#d7d7d7",
+
   }
   

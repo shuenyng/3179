@@ -49,5 +49,6 @@
   ],
   "title": "Maternal Mortality Rate",
   "width": 600,
-  "height": 400
+  "height": 400,
+  "background":"#d7d7d7",
 }

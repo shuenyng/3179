@@ -1,6 +1,6 @@
 body {
 	font-family: 'Helvetica', sans-serif;
-	background-color: #d6d5d4;
+	background-color: #d7d7d7;
 	margin: 0;
 	padding: 0;
   }
@@ -9,7 +9,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: #d6d5d4;
+	background-color: #d7d7d7;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
   }
@@ -20,7 +20,7 @@ body {
   }
   
   .chart-container {
-	background-color: #d6d5d4;
+	background-color: #d7d7d7;
 	margin: 20px 0;
 	padding: 20px;
 	border: 1px solid #ccc;

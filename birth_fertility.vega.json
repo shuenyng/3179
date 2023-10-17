@@ -33,6 +33,8 @@
   },
   "title": "Birth rate vs Fertility rate Heatmap",
   "width": 300,
-  "height": 300
+  "height": 300,
+  "background":"#d7d7d7",
+
 }
 
