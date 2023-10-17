@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"
   },
-  "background": "#e1e6ddx",
+  "background": "#edf2e9",
   "params": [
     {
       "name": "Top_k_Continent",
