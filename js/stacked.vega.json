@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"},
+    "background":"#e1e6dd",
+    "transform": [
+      {"fold": ["Agricultural Land", "Forested Area"], "as": ["Land Use", "Percentage"]}
+    ],
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "Continent"},
+      "x": {"aggregate": "sum", "field": "Percentage", "stack": "zero", "title": "Percentage", "sort": "ascending"},
+      "color": {
+        "field": "Land Use",
+        "scale": {"range": ["skyblue", "#3AA655"]} 
+      }
+    },
+    "title": "Agricultural and Forested Land Distrbibution",
+    "width": 400,
+    "height": 300
+  }
+  
