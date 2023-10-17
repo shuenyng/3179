@@ -37,86 +37,60 @@ body {
 	margin: 10px 0;
   }
   
-  /* Add your chart styling here */
-  
-  /* You may not need the positioning styles (#life_expectancy, #infant_mortality, etc.) anymore */
-
-  
-  
-#life_expectancy{
-	top:10px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#infant_mortality{
+  /* Remove the unnecessary positioning styles for the chart containers */
+  /* You may not need the following styles */
+  /*
+  #life_expectancy {
 	top: 10px;
-	bottom: 100px; 
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#fertility_rate{
-	top:10px;
-	bottom: 100px; 
+  }
+  #infant_mortality {
+	top: 10px;
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#maternal_mortality{
-	top:20px;
-	bottom: 100px; 
+  }
+  #fertility_rate {
+	top: 10px;
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#birth_fertility{
-	top:10px;
-	bottom: 100px; 
+  }
+  #maternal_mortality {
+	top: 20px;
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#infant_life{
-	top:10px;
-	bottom: 100px; 
+  }
+  #birth_fertility {
+	top: 10px;
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#unemployment_rate{
-	top:20px;
-	bottom: 100px; 
+  }
+  #infant_life {
+	top: 10px;
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#stacked{
-	top:10px;
-	bottom: 100px; 
+  }
+  #unemployment_rate {
+	top: 20px;
+	bottom: 100px;
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-.pure-g
-{
+  }
+  #stacked {
+	top: 10px;
+	bottom: 100px;
+	left: 100px;
+	right: 100px;
+  }
+  */
+  .pure-g {
 	margin-top: 40px;
 	margin-bottom: 40px;
-}
+  }
+  
