@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"
   },
-  "background":"#edf2e9",
+  "background":"#e1e6dd",
   "mark": "circle",
   "encoding": {
     "y": {
