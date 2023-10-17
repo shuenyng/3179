@@ -11,118 +11,117 @@
   <title>World Data 2023</title>
 
   <script src="graphs.js"></script> <!-- Include your JavaScript file here -->
-
 </head>
 
 <body>
   <div class="page">
     <h1 class="title">World Data Visualization 2023</h1>
-    
+
+    <!-- Chart Switching Container -->
+    <div class="chart-container">
+      <h2>World Data</h2>
+      <p>Explore different data visualizations by clicking the buttons below:</p>
+      <div id="chart-container">
+        <div id="life_expectancy" style="display: block;"></div>
+        <div id="infant_mortality" style="display: none;"></div>
+        <div id="fertility_rate" style="display: none;"></div>
+      </div>
+      <div id="chart-buttons">
+        <button onclick="showChart('life_expectancy')">Life Expectancy</button>
+        <button onclick="showChart('infant_mortality')">Infant Mortality</button>
+        <button onclick="showChart('fertility_rate')">Fertility Rate</button>
+      </div>
+    </div>
+
+
     <!-- Life Expectancy Chart -->
     <div class="chart-container">
       <h2>Life Expectancy</h2>
-      <p>Explore life expectancy data worldwide.</p>
+      <p>Explore life expectancy data worldwide. This chart provides insights into the average lifespan in various countries, helping us understand global health trends.</p>
       <div id="life_expectancy"></div>
     </div>
 
-    <!-- Infant Mortality Chart -->
-    <div class="chart-container">
+    <div class="chart-container" style="display: none;">
       <h2>Infant Mortality</h2>
       <p>Visualize infant mortality rates across countries.</p>
       <div id="infant_mortality"></div>
     </div>
 
     <!-- Fertility Rate Chart -->
-    <div class="chart-container">
+    <div class="chart-container" style="display: none;">
       <h2>Fertility Rate</h2>
       <p>Understand fertility rates and their variations.</p>
       <div id="fertility_rate"></div>
     </div>
 
+
     <!-- Maternal Mortality Chart -->
     <div class="chart-container">
       <h2>Maternal Mortality</h2>
-      <p>Visualize maternal mortality rates by region.</p>
+      <p>Visualize maternal mortality rates by region. This chart highlights the challenges faced by expectant mothers in different parts of the world.</p>
       <div id="maternal_mortality"></div>
     </div>
 
     <!-- Birth Rate vs Fertility Rate Chart -->
     <div class="chart-container">
       <h2>Birth Rate vs Fertility Rate</h2>
-      <p>Compare birth rates and fertility rates globally.</p>
+      <p>Compare birth rates and fertility rates globally. This chart helps you understand the relationship between birth rates and fertility across nations.</p>
       <div id="birth_fertility"></div>
     </div>
 
     <!-- Infant Mortality vs Life Expectancy Chart -->
     <div class="chart-container">
       <h2>Infant Mortality vs Life Expectancy</h2>
-      <p>Explore the relationship between infant mortality and life expectancy.</p>
+      <p>Explore the relationship between infant mortality and life expectancy. This chart reveals how these two critical factors are intertwined in different countries.</p>
       <div id="infant_life"></div>
     </div>
 
     <!-- Unemployment Rate Chart -->
     <div class="chart-container">
       <h2>Unemployment Rate</h2>
-      <p>Analyze global unemployment statistics.</p>
+      <p>Analyze global unemployment statistics. This chart provides insights into employment trends and economic conditions worldwide.</p>
       <div id="unemployment_rate"></div>
     </div>
 
     <!-- Agricultural vs Forested Land Chart -->
     <div class="chart-container">
       <h2>Agricultural vs Forested Land</h2>
-      <p>See the distribution of land use in various countries.</p>
+      <p>See the distribution of land use in various countries. This chart showcases how land is utilized for agriculture and forests in different regions.</p>
       <div id="stacked"></div>
     </div>
-
-  
+  </div>
 
   <script type="text/javascript">
-    // Your Vega chart embedding code here
-  
-var spec = "life_expectancy.vega.json"; 
-  vegaEmbed('#life_expectancy', spec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+    var currentChart = 'life_expectancy';
 
-var graph1 = "infant_mortality.vega.json"; 
-  vegaEmbed('#infant_mortality', graph1).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+    function showChart(chartId) {
+      document.getElementById(currentChart).style.display = 'none';
+      document.getElementById(chartId).style.display = 'block';
+      currentChart = chartId;
+    }
 
-  var graph2 = "fertility_rate.vega.json"; 
-  vegaEmbed('#fertility_rate', graph2).then(function(result) {
-    // Access the Vega view instance for co_region chart
-  }).catch(console.error);
+    var spec1 = "life_expectancy.vega.json";
+    vegaEmbed('#life_expectancy', spec1).catch(console.error);
 
-  var graph3 = "maternal_mortality.vega.json"; // Specify the URL or file path for your humidity chart specification
-  vegaEmbed('#maternal_mortality', graph3).then(function(result) {
-    // Access the Vega view instance for the co_temp chart
-  }).catch(console.error);
+    var spec2 = "infant_mortality.vega.json";
+    vegaEmbed('#infant_mortality', spec2).catch(console.error);
 
-  var graph4 = "birth_fertility.vega.json"; // Specify the URL or file path for your humidity chart specification
-  vegaEmbed('#birth_fertility', graph4).then(function(result) {
-    // Access the Vega view instance for the heatmap chart
-  }).catch(console.error);
+    var spec3 = "fertility_rate.vega.json";
+    vegaEmbed('#fertility_rate', spec3).catch(console.error);
+    var graph3 = "maternal_mortality.vega.json";
+    vegaEmbed('#maternal_mortality', graph3).catch(console.error);
 
-  var graph5 = "infant_life.vega.json"; // Specify the URL or file path for your humidity chart specification
-  vegaEmbed('#infant_life', graph5).then(function(result) {
-    // Access the Vega view instance for the heatmap chart
-  }).catch(console.error);
+    var graph4 = "birth_fertility.vega.json";
+    vegaEmbed('#birth_fertility', graph4).catch(console.error);
 
-  var graph6 = "unemployment_rate.vega.json"; // Specify the URL or file path for your humidity chart specification
-  vegaEmbed('#unemployment_rate', graph6).then(function(result) {
-    // Access the Vega view instance for the humidity chart
-  }).catch(console.error);
+    var graph5 = "infant_life.vega.json";
+    vegaEmbed('#infant_life', graph5).catch(console.error);
 
-  var graph7 = "stacked.vega.json"; // Specify the URL or file path for your humidity chart specification
-  vegaEmbed('#stacked', graph7).then(function(result) {
-    // Access the Vega view instance for the heatmap chart
-  }).catch(console.error);
+    var graph6 = "unemployment_rate.vega.json";
+    vegaEmbed('#unemployment_rate', graph6).catch(console.error);
 
-  
-
-
-    
+    var graph7 = "stacked.vega.json";
+    vegaEmbed('#stacked', graph7).catch(console.error);
   </script>
 </body>
 </html>
