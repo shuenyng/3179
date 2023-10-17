@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"
   },
+  "background":"#edf2e9",
   "mark": "circle",
   "encoding": {
     "y": {
@@ -49,6 +50,5 @@
   ],
   "title": "Maternal Mortality Rate",
   "width": 600,
-  "height": 400,
-  "background":"#d7d7d7",
+  "height": 400
 }

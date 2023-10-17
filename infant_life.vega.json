@@ -10,7 +10,7 @@
   "mark": "rect",
   "width": 300,
   "height": 200,
-  "background":"#d7d7d7",
+  "background":"#edf2e9",
   "encoding": {
     "x": {
       "bin": {"maxbins":20},

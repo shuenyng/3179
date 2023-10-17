@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/shuenyng/3179/main/data/world-data-2023.csv"},
-  
+    "background":"#edf2e9",
     "transform": [
       {"fold": ["Agricultural Land", "Forested Area"], "as": ["Land Use", "Percentage"]}
     ],
@@ -16,8 +16,6 @@
     },
     "title": "Agricultural and Forested Land Distrbibution",
     "width": 400,
-    "height": 300,
-    "background":"#d7d7d7",
-
+    "height": 300
   }
   
